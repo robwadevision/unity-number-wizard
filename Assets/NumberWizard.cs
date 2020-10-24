@@ -51,6 +51,11 @@ public class NumberWizard : MonoBehaviour
             Debug.Log("Nice, nailed it! Thanks for playing!");
             StartGame();
         }
+        if (max == min)
+        {
+            Debug.Log("I got it, just accept it! New game!");
+            StartGame();
+        }
     }
 
     void NextGuess()
